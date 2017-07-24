@@ -51,7 +51,7 @@ func main() {
 			"sign":    {sign(*appkey, *secret, timestamp)},
 			"time":    {timestamp},
 			"text":    {string(body)},
-			"fans_id": {"7"},
+			"fans_id": {strings.Join(to, ",")},
 		},
 	)
 }
